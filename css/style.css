@@ -1,0 +1,21 @@
+.jumbotron{
+    /* background-image: url(../images/fdcbanner.png); */
+    color: azure;
+    border-radius: 15px;
+    background-repeat: no-repeat;
+    margin: 15px 15px 15px 15px;
+    background-color: #209fc5;
+}
+
+body{
+    background-color: #209fc5;
+}
+hr{
+    border-top: dashed;
+}
+.colin{
+    /* margin: 20px 25px 40px 140px; */
+    /* font-size: 200%; */
+    border: dashed;
+    /* margin: -1px; */
+}
