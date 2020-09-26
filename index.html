@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charSet="utf-8" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <style data-href="/styles.a0f9b7a2e0bae313bd1b.css">
+    @import url(https://fonts.googleapis.com/css?family=Pacifico);
+    @import url(https://fonts.googleapis.com/css?family=Varela+Round);
+    @import url(https://fonts.googleapis.com/css?family=Roboto+Mono);
+    @import url(https://afeld.github.io/emoji-css/emoji.css);
+
+    body {
+      position: relative;
+      margin: 0;
+      min-height: 100%;
+      padding-bottom: 6rem;
+      font-family: Varela Round, sans-serif;
+      color: #373738;
+    }
+
+    .background-hero {
+      position: absolute;
+      z-index: -10;
+      width: 100%;
+      height: 250px;
+      background: #4568dc;
+      background: -webkit-gradient(linear,
+          left top,
+          right top,
+          from(#f44242),
+          to(#426ef4));
+      background: linear-gradient(90deg, #f44242, #426ef4);
+    }
+
+    .container {
+      position: relative;
+      width: 80%;
+      margin: auto;
+    }
+
+    .content {
+      padding: 10px 20px;
+    }
+
+    a {
+      color: #c14ec5;
+      text-decoration: none;
+    }
+
+    .nav {
+      display: block;
+      overflow: auto;
+      padding-top: 10px;
+    }
+
+    .nav .brand-text {
+      display: inline-block;
+      float: left;
+      clear: both;
+      margin: 10px 10px 10px 15px;
+      text-align: center;
+      color: #fff;
+      font-size: 1.6em;
+      font-family: Pacifico, cursive;
+    }
+
+    .nav .github-logo {
+      display: inline-block;
+      float: right;
+      margin: 15px 15px 10px 10px;
+      vertical-align: middle;
+    }
+
+    .nav .github-logo img {
+      height: 40px;
+      width: 40px;
+      -webkit-transition: 0.2s;
+      transition: 0.2s;
+    }
+
+    .nav .github-logo img:hover {
+      -webkit-transform: scale(1.1);
+      transform: scale(1.1);
+    }
+
+    .card {
+      display: block;
+      padding: 0;
+      background-color: #fff;
+      border-radius: 3px;
+      margin: 30px auto;
+      -webkit-box-shadow: 0 14px 30px -2px rgba(194, 117, 238, 0.59);
+      box-shadow: 0 14px 30px -2px rgba(194, 117, 238, 0.59);
+    }
+
+    .tab-holder {
+      display: block;
+      width: inherit;
+      position: relative;
+      -webkit-box-shadow: 0 5px 30px -2px rgba(194, 117, 238, 0.39);
+      box-shadow: 0 5px 30px -2px rgba(194, 117, 238, 0.39);
+    }
+
+    .tabs {
+      list-style-type: none;
+      display: block;
+      margin: 0;
+      padding: 0;
+      overflow: auto;
+    }
+
+    .tabs li {
+      display: inline;
+    }
+
+    .tabs li a {
+      display: inline-block;
+      -webkit-transition: 0.3s;
+      transition: 0.3s;
+      text-decoration: none;
+      color: #616063;
+      padding: 17px;
+      border-bottom: 2px solid transparent;
+    }
+
+    .tabs a:hover {
+      color: #c14ec5;
+    }
+
+    .tabs li a.active {
+      color: #c14ec5;
+      border-bottom: 2px solid #c14ec5;
+    }
+
+    .code {
+      background: #eee8ee;
+      border-radius: 3px;
+      padding: 15px 20px;
+      overflow: auto;
+      color: #373738;
+      font-family: Roboto Mono, monospace;
+    }
+
+    .card-container {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      padding: 10px;
+      -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+      justify-content: space-evenly;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+      flex-direction: row;
+      text-align: center;
+    }
+
+    .profile {
+      padding: 10px;
+      width: 190px;
+      height: 230px;
+      border-radius: 3px;
+      background: #fff;
+      text-decoration: none;
+      margin: 0 5px 15px;
+      -webkit-transition: all 0.3s;
+      transition: all 0.3s;
+      -webkit-box-shadow: 0 5px 30px -5px rgba(194, 117, 238, 0.59);
+      box-shadow: 0 5px 30px -5px rgba(194, 117, 238, 0.59);
+    }
+
+    .profile:hover {
+      -webkit-box-shadow: 0 14px 30px -2px rgba(194, 117, 238, 0.59);
+      box-shadow: 0 14px 30px -2px rgba(194, 117, 238, 0.59);
+    }
+
+    .profile span {
+      display: block;
+      margin: 10px auto;
+      text-align: center;
+      height: 3em;
+      color: #373738;
+    }
+
+    .profile img {
+      display: block;
+      margin: 15px auto;
+      border-radius: 50%;
+      height: 130px;
+      width: 130px;
+      border: 3px solid #b06ab3;
+      -webkit-transition: all 0.3s;
+      transition: all 0.3s;
+    }
+
+    .profile img:hover {
+      -webkit-box-shadow: 0 10px 30px -2px rgba(194, 117, 238, 0.59);
+      box-shadow: 0 10px 30px -2px rgba(194, 117, 238, 0.59);
+    }
+
+    footer {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      padding: 2rem;
+      color: #616063;
+      text-align: center;
+    }
+
+    footer a {
+      color: #c14ec5;
+      text-decoration: none;
+    }
+
+    @media (min-width: 1281px) {
+      .container {
+        width: 80%;
+      }
+
+      .tabs {
+        padding-left: 20px;
+      }
+    }
+
+    @media (min-width: 1025px) and (max-width: 1280px) {
+      .container {
+        width: 80%;
+      }
+
+      .tabs {
+        padding-left: 20px;
+      }
+    }
+
+    @media (min-width: 768px) and (max-width: 1024px) {
+      .container {
+        width: 90%;
+      }
+
+      .tabs {
+        padding-left: 20px;
+      }
+    }
+
+    @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+      .container {
+        width: 90%;
+      }
+
+      .tabs {
+        text-align: center;
+      }
+    }
+
+    @media (min-width: 481px) and (max-width: 767px) {
+      .container {
+        width: 95%;
+      }
+
+      .tab-holder {
+        text-align: center;
+      }
+    }
+
+    @media (min-width: 320px) and (max-width: 480px) {
+      .container {
+        width: 95%;
+      }
+
+      .tab-holder {
+        text-align: center;
+      }
+    }
+  </style>
+  <meta name="generator" content="Gatsby 2.13.15" />
+  <title data-react-helmet="true">Git Flow Workshop</title>
+  <meta data-react-helmet="true" name="description" content="Make your first GitHub Pull Request" />
+  <meta data-react-helmet="true" name="keywords" content="GitHub, PullRequest, First OpenSource, contribution" />
+  <meta data-react-helmet="true" name="viewport" content="width=device-width, initial-scale=1" />
+  <meta data-react-helmet="true" name="msapplication-TileColor" content="#603cba" />
+  <meta data-react-helmet="true" name="theme-color" content="#261f28" />
+  <link as="script" rel="preload" href="/1-960216557657f4cd5425.js" />
+  <link as="script" rel="preload" href="/component---src-pages-submissions-js-6218fac99ab4906a08e5.js" />
+  <link as="script" rel="preload" href="/app-9b64c5cea177a441aa27.js" />
+  <link as="script" rel="preload" href="/styles-6be7257993bc60dbd36e.js" />
+  <link as="script" rel="preload" href="/webpack-runtime-d73c25b4e68e78c4deb6.js" />
+  <link as="fetch" rel="preload" href="/page-data/submissions/page-data.json" crossorigin="use-credentials" />
+</head>
+
+<body>
+  <div id="___gatsby">
+    <div style="outline:none" tabindex="-1" role="group" id="gatsby-focus-wrapper">
+      <div>
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+        <link rel="manifest" href="/site.webmanifest" />
+        <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#ed11ca" />
+        <div>
+          <div class="background-hero"></div>
+          <div class="container">
+            <div class="nav">
+              <div class="brand-text">IIST-Hacks<br />Hacktoberfest Online Meetup</div>
+              <div class="github-logo">
+                <a target="_blank" href="https://github.com/akhilparikh"><img alt="github-logo"
+                    src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTc5MiIgaGVpZ2h0PSIxNzkyIiB2aWV3Qm94PSIwIDAgMTc5MiAxNzkyIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxwYXRoIGQ9Ik04OTYgMTI4cTIwOSAwIDM4NS41IDEwM3QyNzkuNSAyNzkuNSAxMDMgMzg1LjVxMCAyNTEtMTQ2LjUgNDUxLjV0LTM3OC41IDI3Ny41cS0yNyA1LTQwLTd0LTEzLTMwcTAtMyAuNS03Ni41dC41LTEzNC41cTAtOTctNTItMTQyIDU3LTYgMTAyLjUtMTh0OTQtMzkgODEtNjYuNSA1My0xMDUgMjAuNS0xNTAuNXEwLTExOS03OS0yMDYgMzctOTEtOC0yMDQtMjgtOS04MSAxMXQtOTIgNDRsLTM4IDI0cS05My0yNi0xOTItMjZ0LTE5MiAyNnEtMTYtMTEtNDIuNS0yN3QtODMuNS0zOC41LTg1LTEzLjVxLTQ1IDExMy04IDIwNC03OSA4Ny03OSAyMDYgMCA4NSAyMC41IDE1MHQ1Mi41IDEwNSA4MC41IDY3IDk0IDM5IDEwMi41IDE4cS0zOSAzNi00OSAxMDMtMjEgMTAtNDUgMTV0LTU3IDUtNjUuNS0yMS41LTU1LjUtNjIuNXEtMTktMzItNDguNS01MnQtNDkuNS0yNGwtMjAtM3EtMjEgMC0yOSA0LjV0LTUgMTEuNSA5IDE0IDEzIDEybDcgNXEyMiAxMCA0My41IDM4dDMxLjUgNTFsMTAgMjNxMTMgMzggNDQgNjEuNXQ2NyAzMCA2OS41IDcgNTUuNS0zLjVsMjMtNHEwIDM4IC41IDg4LjV0LjUgNTQuNXEwIDE4LTEzIDMwdC00MCA3cS0yMzItNzctMzc4LjUtMjc3LjV0LTE0Ni41LTQ1MS41cTAtMjA5IDEwMy0zODUuNXQyNzkuNS0yNzkuNSAzODUuNS0xMDN6bS00NzcgMTEwM3EzLTctNy0xMi0xMC0zLTEzIDItMyA3IDcgMTIgOSA2IDEzLTJ6bTMxIDM0cTctNS0yLTE2LTEwLTktMTYtMy03IDUgMiAxNiAxMCAxMCAxNiAzem0zMCA0NXE5LTcgMC0xOS04LTEzLTE3LTYtOSA1IDAgMTh0MTcgN3ptNDIgNDJxOC04LTQtMTktMTItMTItMjAtMy05IDggNCAxOSAxMiAxMiAyMCAzem01NyAyNXEzLTExLTEzLTE2LTE1LTQtMTkgN3QxMyAxNXExNSA2IDE5LTZ6bTYzIDVxMC0xMy0xNy0xMS0xNiAwLTE2IDExIDAgMTMgMTcgMTEgMTYgMCAxNi0xMXptNTgtMTBxLTItMTEtMTgtOS0xNiAzLTE0IDE1dDE4IDggMTQtMTR6IiBmaWxsPSIjZmZmIi8+PC9zdmc+Cg==" /></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="card">
+            <div class="tab-holder">
+              <ul class="tabs">
+                <!-- <li><a   href="/">Instructions</a></li> -->
+                <li>
+                  <a aria-current="page" class="active" href="/submissions/">Submissions</a>
+                </li>
+              </ul>
+            </div>
+            <div class="content">
+              <div class="card-container">
+                <a href="https://github.com/AkhilParikh" class="profile"><img
+                    src="https://avatars1.githubusercontent.com/u/47416607?s=460&u=a1176fa6b519d364640a1d07716ed3d63f024b5c&v=4" /><span>Akhil
+                    Parikh</span></a><a href="https://github.com/" class="profile"><img
+                    src="https://media-exp1.licdn.com/dms/image/C5603AQGS0wJO1dnndg/profile-displayphoto-shrink_200_200/0?e=1606348800&v=beta&t=dfTKEZ8ufXtJonZBumsaZO6_0SVXpPPnQlCUJTX0vu8" /><span>Chetan
+                    Patidar</span></a>
+                <!-- PLEASE DON'T MAKE ANY CHANGES TO THE CODE ABOVE THIS LINE -->
+                <!-- ADD YOUR CODE FROM HERE -->
+
+
+
+                <!-- PLEASE DON'T MAKE ANY CHANGES TO THE CODE BELOW THIS LINE -->
+              </div>
+            </div>
+          </div>
+        </div>
+        <footer>
+          Made with
+          <i class="em em-heart" style="width:15px;height:15px"></i> by<a href="">
+            IIST-Hacks</a>
+
+        </footer>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
