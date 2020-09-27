@@ -1,4 +1,4 @@
-# This is a webpage for [IIST-Hacks](https://bit.ly/IISTHACKS) showing you about the list of Attendees selected for the **"IIST Indore Hacks - Hacktoberfest Online Meetup"** event
+# This is a webpage for [IIST-Hacks](https://bit.ly/IISTHACKS) showing you about the list of Attendees for the **"IIST Indore Hacks - Hacktoberfest Online Meetup"** event
 
 ## Task 1
 
