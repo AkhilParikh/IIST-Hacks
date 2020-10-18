@@ -13,17 +13,17 @@
 <!-- FOR EXAMPLE = iharshit009 IN PLACE OF 
                     YOUR_GITHUB_USERNAME in the below line -->
                   <a
-                    href="https://github.com/Mr-Sablok"
+                    href="https://github.com/YOUR_GITHUB_USERNAME"
                     class="profile"
                   >
                     <!-- FOR EXAMPLE =
                   https://avatars1.githubusercontent.com/devabhixda?size=200
                   IN PLACE OF YOUR_IMAGE_LINK in the below line-->
-                    <img src="https://drive.google.com/file/d/1OMOQwZNRIT9t0Ii0BZGf0y2rxU-bhJUM/view?usp=drivesdk" />
+                    <img src="YOUR_IMAGE_LINK" />
 
                     <!-- FOR EXAMPLE = HARSHIT JAIN 
                     IN PLACE OF YOUR_FULL_NAME in the below line -->
-                    <span>PULKIT SABLOK </span></a
+                    <span>YOUR_FULL_NAME</span></a
                   >
 ```
 ###### Now Wait for us to review and merge your Pull request after that see your name [here](https://akhilparikh.github.io/IIST-Hacks/) 
